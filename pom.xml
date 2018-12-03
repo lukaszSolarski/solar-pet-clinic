@@ -4,7 +4,7 @@
 
     <groupId>com.solar.springframework5</groupId>
     <artifactId>solar-pet-clinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <modules>
         <module>pet-clinic-data</module>
         <module>pet-clinic-web</module>
@@ -48,7 +48,7 @@
     <scm>
         <url>https://github.com/lukaszSolarski/solar-pet-clinic.git</url>
         <connection>scm:git:https://github.com/lukaszSolarski/solar-pet-clinic.git</connection>
-      <tag>solar-pet-clinic-0.0.1</tag>
+      <tag>0.0.1-SNAPSHOT</tag>
   </scm>
 
 

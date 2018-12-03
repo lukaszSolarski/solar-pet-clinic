@@ -38,4 +38,8 @@
         </dependency>
     </dependencies>
 
+
+  <scm>
+    <tag>0.0.1-SNAPSHOT</tag>
+  </scm>
 </project>
