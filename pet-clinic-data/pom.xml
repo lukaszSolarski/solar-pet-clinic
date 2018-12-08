@@ -52,8 +52,4 @@
             </plugin>
         </plugins>
     </build>
-
-  <scm>
-    <tag>solar-pet-clinic-0.0.1</tag>
-  </scm>
 </project>

@@ -48,7 +48,6 @@
     </build>
     <scm>
         <developerConnection>scm:git:git@github.com:lukaszSolarski/solar-pet-clinic.git</developerConnection>
-        <tag>solar-pet-clinic-0.0.1</tag>
   </scm>
 
 
