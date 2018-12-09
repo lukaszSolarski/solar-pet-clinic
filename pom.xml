@@ -47,6 +47,8 @@
         </plugins>
     </build>
     <scm>
+        <!-- I'm using https because I have problems with ssh
+        Command form maven is: mvn release:prepare -Dusername=username -Dpassword=password -->
         <developerConnection>scm:git:https://github.com/lukaszSolarski/solar-pet-clinic.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
