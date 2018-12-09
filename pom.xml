@@ -4,7 +4,7 @@
 
     <groupId>com.solar.springframework5</groupId>
     <artifactId>solar-pet-clinic</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <modules>
         <module>pet-clinic-data</module>
         <module>pet-clinic-web</module>
@@ -50,7 +50,7 @@
         <!-- I'm using https because I have problems with ssh
         Command form maven is: mvn release:prepare -Dusername=username -Dpassword=password -->
         <developerConnection>scm:git:https://github.com/lukaszSolarski/solar-pet-clinic.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>solar-pet-clinic-0.0.3</tag>
   </scm>
 
 
