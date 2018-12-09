@@ -1,6 +1,6 @@
 package com.solar.springframework5.solarpetclinic.data;
 
-public class Person {
+public class Person extends  BaseEntity {
     private String firstName;
     private String lastName;
 
