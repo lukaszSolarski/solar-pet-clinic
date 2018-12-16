@@ -2,11 +2,6 @@ package com.solar.springframework5.solarpetclinic.services;
 
 import com.solar.springframework5.solarpetclinic.data.Owner;
 
-import java.util.Set;
-
-public interface OwnerService {
+public interface OwnerService extends BasicCrudService<Owner, Long> {
     Owner findByLastName(String lastName);
-    Owner findById (Long id);
-    Set<Owner> findAll();
-    Owner save (Owner owner);
 }
