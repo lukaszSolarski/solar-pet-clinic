@@ -49,7 +49,7 @@ public class DataInitializer implements CommandLineRunner {
         v1.setLastName("Norris");
 
         Vet v2 = new Vet();
-        v2.setId(1l);
+        v2.setId(2l);
         v2.setFirstName("Donald");
         v2.setLastName("Duck");
 
