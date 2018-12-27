@@ -18,9 +18,13 @@ public class DataInitializer implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataInitializer() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    /*
+    @Autowired is not required. Since Spring 4.3 (?) Dependency injection by constructor will automatically
+    act like the '@Autowired' annotation was provided.
+     */
+    public DataInitializer(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

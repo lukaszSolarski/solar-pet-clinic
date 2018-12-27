@@ -2,9 +2,11 @@ package com.solar.springframework5.solarpetclinic.services.map;
 
 import com.solar.springframework5.solarpetclinic.data.Vet;
 import com.solar.springframework5.solarpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Vet findById(Long id) {
