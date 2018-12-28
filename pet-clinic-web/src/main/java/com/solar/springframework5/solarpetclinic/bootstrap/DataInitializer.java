@@ -30,12 +30,10 @@ public class DataInitializer implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Owner o1 = new Owner();
-        o1.setId(1L);
         o1.setFirstName("Luke");
         o1.setLastName("Skywalker");
 
         Owner o2 = new Owner();
-        o2.setId(2L);
         o2.setFirstName("John");
         o2.setLastName("Thomson");
 
@@ -44,12 +42,10 @@ public class DataInitializer implements CommandLineRunner {
         System.out.println("Owners loaded..");
 
         Vet v1 = new Vet();
-        v1.setId(1l);
         v1.setFirstName("Chuck");
         v1.setLastName("Norris");
 
         Vet v2 = new Vet();
-        v2.setId(2l);
         v2.setFirstName("Donald");
         v2.setLastName("Duck");
 
