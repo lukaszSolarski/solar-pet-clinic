@@ -39,6 +39,7 @@ public class DataInitializer implements CommandLineRunner {
         cat.setName("Cat");
         PetType savedCatPetType = petTypeService.save(cat);
 
+        System.out.println("Pet types loaded...");
         Owner o1 = new Owner();
         o1.setFirstName("Luke");
         o1.setLastName("Skywalker");
