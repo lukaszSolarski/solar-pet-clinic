@@ -2,7 +2,7 @@ package com.solar.springframework5.solarpetclinic.data;
 
 import java.time.LocalDate;
 
-public class Pet extends BaseEntity {
+public class Pet extends NamedBaseEntity {
     private PetType petType;
     private Owner owner;
     private LocalDate birthday;
