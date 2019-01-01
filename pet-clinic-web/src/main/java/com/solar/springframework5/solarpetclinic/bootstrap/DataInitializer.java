@@ -1,11 +1,11 @@
 package com.solar.springframework5.solarpetclinic.bootstrap;
 
 import com.solar.springframework5.solarpetclinic.data.Owner;
+import com.solar.springframework5.solarpetclinic.data.PetType;
 import com.solar.springframework5.solarpetclinic.data.Vet;
 import com.solar.springframework5.solarpetclinic.services.OwnerService;
+import com.solar.springframework5.solarpetclinic.services.PetTypeService;
 import com.solar.springframework5.solarpetclinic.services.VetService;
-import com.solar.springframework5.solarpetclinic.services.map.OwnerServiceMap;
-import com.solar.springframework5.solarpetclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -17,18 +17,28 @@ public class DataInitializer implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
+    private final PetTypeService petTypeService;
 
     /*
     @Autowired is not required. Since Spring 4.3 (?) Dependency injection by constructor will automatically
     act like the '@Autowired' annotation was provided.
      */
-    public DataInitializer(OwnerService ownerService, VetService vetService) {
+    public DataInitializer(OwnerService ownerService, VetService vetService, PetTypeService petTypeService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
+        this.petTypeService = petTypeService;
     }
 
     @Override
     public void run(String... args) throws Exception {
+        PetType dog = new PetType();
+        dog.setName("Dog");
+        PetType savedDogPetType = petTypeService.save(dog);
+
+        PetType cat = new PetType();
+        cat.setName("Cat");
+        PetType savedCatPetType = petTypeService.save(cat);
+
         Owner o1 = new Owner();
         o1.setFirstName("Luke");
         o1.setLastName("Skywalker");
