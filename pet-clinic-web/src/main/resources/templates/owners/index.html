@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body}, 'owners')}">
 <head>
     <meta charset="UTF-8">
     <title>Owners index page</title>
@@ -7,13 +7,13 @@
 <body>
 <!-- I'm not sure if the above line is required. It tells IntelliJ that "owner" is the type of specific class -->
 <!--/*@thymesVar id="owner" type="com.solar.springframework5.solarpetclinic.data.Owner"*/-->
-    <h1 th:text="'List of Pet Owners'">List goes here</h1>
-    <table>
+    <h2 th:text="'Owners'">Owners</h2>
+    <table id="owners" class="table table-striped">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>First Name</th>
-                <th>Last Name</th>
+                <th style="width: 150px;">Id</th>
+                <th style="width: 150px;">First Name</th>
+                <th style="width: 150px;">Last Name</th>
             </tr>
         </thead>
         <tbody>
