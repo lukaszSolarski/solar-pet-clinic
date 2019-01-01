@@ -14,7 +14,7 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 
     /*
     This is needed to mimic the behaviour of Hibertante. We have to be sure that saved objects
-    aren't null and that they already has their own ids.
+    aren't null and that they already have their own ids.
      */
     private final PetService petService;
     private final PetTypeService petTypeService;
