@@ -1,6 +1,11 @@
 package com.solar.springframework5.solarpetclinic.data;
 
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
+
+@MappedSuperclass
 public class NamedBaseEntity extends BaseEntity {
+    @Column(name = "name")
     private String name;
 
     public String getName() {

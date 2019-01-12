@@ -1,10 +1,20 @@
 package com.solar.springframework5.solarpetclinic.data;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "pets")
 public class Pet extends NamedBaseEntity {
+    @ManyToOne
+    @JoinColumn(name = "type_id")
     private PetType petType;
+
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
     private Owner owner;
+
+    @Column(name = "birthday")
     private LocalDate birthday;
 
     public PetType getPetType() {
