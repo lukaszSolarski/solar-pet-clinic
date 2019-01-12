@@ -45,4 +45,12 @@ public class Pet extends NamedBaseEntity {
     public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
+
+    public Set<Visit> getVisits() {
+        return visits;
+    }
+
+    public void setVisits(Set<Visit> visits) {
+        this.visits = visits;
+    }
 }
