@@ -2,9 +2,11 @@ package com.solar.springframework5.solarpetclinic.services.map;
 
 import com.solar.springframework5.solarpetclinic.data.Visit;
 import com.solar.springframework5.solarpetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VisitServiceMap extends AbstractMapService<Visit, Long> implements VisitService {
 
     @Override
