@@ -5,11 +5,13 @@ import com.solar.springframework5.solarpetclinic.data.Pet;
 import com.solar.springframework5.solarpetclinic.services.OwnerService;
 import com.solar.springframework5.solarpetclinic.services.PetService;
 import com.solar.springframework5.solarpetclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"map","default"})
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     /*
