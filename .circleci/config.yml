@@ -42,5 +42,5 @@ jobs:
 
     # set up and show test summary
     - store_test_results:
-        path: test-results
+        path: ~/repo/build/test-results
 
